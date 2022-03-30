@@ -149,6 +149,7 @@ header li a{
 }
 
 
+
 /*FOOTER*/
 
 footer {
@@ -214,7 +215,6 @@ address::after {
     margin-left: auto;
     margin-right: auto;
 }
-
 /*
  * RESPONSIVE
  */
