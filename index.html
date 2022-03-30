@@ -10,6 +10,7 @@
     <title>Mijn weg, mijn wil</title>
 </head>
 <body>
+    <!---->
 <div class="container">
     <header>
         <div class="content">
@@ -30,16 +31,83 @@
                 </ul>
             </nav>
             <div class="login">
-                <button class="loginBtn"><a href=""><img src="/assets/Login.png" alt="LoginLogo"></a></button>
+                <button class="loginBtn"><a href=""><img src="../assets/Login.png" alt="LoginLogo"></a></button>
             </div>
         </div>
     </header>
     <main>
-        <h1>Hallo</h1>
+        <h1>hallo</h1>
+        <button id="open">LOG IN</button>
+        <section class="container-popup" id="container-popup">
+            <div class="popup">
+                <h1>Mijn weg, Mijn wil</h1>
+                <div class="popup-main">
+                    
+                    <div class="popup-register">
+                        <h2>Register</h2>
+                        <div></div>
+                        <form action="" class="register">
+                            <div class="user">
+                                <div class="name">
+                                    <label for="name">Voornaam: </label>
+                                    <input type="text" name="name" id="name" size="9" required>
+                                </div>
+                                <div class="lastname">
+                                    <label for="name">Naam: </label>
+                                    <input type="text" name="name" id="name" size="9" required>
+                                </div>
+                            </div>
+                            <div class="email">
+                                <label for="name">E-mail: </label>
+                                <input type="text" name="name" id="name" required>
+                            </div>
+                            <div class="code">
+                                <label for="name">Code van uw box: </label>
+                                <input type="text" name="name" id="name" required>
+                            </div>    
+                            <div class="tel">
+                                <label for="name">Telefoonnummer: </label>
+                                <input type="text" name="name" id="name" required>
+                            </div>    
+                            <div class="pass">
+                                <label for="name">Wachtwoord: </label>
+                                <input type="text" name="name" id="name" required>
+                            </div>    
+                            <div class="pass-repeat">
+                                <label for="name">Bevestig wachtwoord: </label>
+                                <input type="text" name="name" id="name" required>
+                            </div>  
+                        </form>  
+                        <button type="submit">registreren</button>     
+                    </div>
+                        
+                    <span></span>
+                    <div class="popup-login">
+                        <h2>Login</h2>
+                            <form action="">
+                                <div class="email">
+                                    <label for="name">E-mail: </label>
+                                    <input type="text" name="name" id="name" required>
+                                </div>
+                                <div class="pass">
+                                    <label for="name">Wachtwoord: </label>
+                                    <input type="text" name="name" id="name" required>
+                                </div>
+                            </form>
+                        <button type="submit">Log in</button>
+                        <div class="loginFoto">
+                            <img src="../assets/LoginFoto.png" alt="" height="150px" width="150px">
+                        </div>
+                    </div>
+                </div>
+                <button id="sluiten">sluiten</button>
+            </div>
+            
+        </section>
     </main>
     <footer>
         <section class="footer-box">
-            <span class="footer-title">Mijn Wil, Mijn Weg</span>
+            <p>Mijn wil, Mijn weg</p>
             <address>
                 <ul>
                     <li><a href="tel:/">09000000</a></li>
