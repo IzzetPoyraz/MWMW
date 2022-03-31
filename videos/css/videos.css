@@ -27,6 +27,12 @@ main{
         display: flex;
         flex-direction: row;
     }
+
+    #videos{
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 .container{
@@ -71,8 +77,11 @@ main{
 }
 
 #fourth{
-
     margin-top: 5em;
     display: flex;
     height: 25em;
+}
+
+#links h1{
+    margin-left: 4em;
 }
