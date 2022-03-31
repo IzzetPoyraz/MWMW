@@ -5,59 +5,68 @@
     --green:#C6DABF;
     --red:#FF0000;
 }
-.coaching-main {
-    display: flex;
-    width: 100%;
-    text-align: center;
-
+.coaching-main{
+    display: block;
 }
-.coachingtitle {
-    width: 105%;
-    text-align: center;
+.coachingimg img {
+    height: 350px;
+    width: 350px;
 }
-.coaching-main h1 {
-    text-align: center;
-}
-
 .coaching-right {
-    max-width: 50%;
-    width: 100%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.coaching-left {
-    max-width: 50%;
-    width: 100%;
-    margin-right: 1rem;
-    text-align: center;
-    margin: 0 auto;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;  
 }
-.meeting h2 {
-    margin-bottom: 1rem;
+.meeting {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+  
+}
+.meeting {
+    margin-top: 2rem;
+}
+.coaching-right .h2 {
+    padding-left: 5rem;
 }
 
-@media (max-width: 750px) {
-    .coaching-main{
-        display: block;
-    }
-    .coachingimg img {
-        height: 300px;
-        width: 350px;
-    }
-    .coaching-right {
+@media (min-width: 750px) {
+    .coaching-main {
         display: flex;
-        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    
+    }
+    .coachingtitle {
+        width: 105%;
+        text-align: center;
+    }
+    .coaching-main h1 {
+        text-align: center;
+    }
+    
+    .coaching-right {
+        max-width: 50%;
+        width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .coaching-left {
+        max-width: 50%;
+        width: 100%;
+        margin-right: 1rem;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        flex-direction: column;
-        
+    }
+    .meeting h2 {
+        margin-bottom: 1rem;
     }
     .meeting {
-        margin-top: 2rem;
-    }
-    .coaching-right .h2 {
-        padding-left: 5rem;
-    }
-}
+            display: flex;
+            flex-direction: column;    }
+}   
