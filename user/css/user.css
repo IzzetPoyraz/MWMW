@@ -1,7 +1,12 @@
+
 .lijn {
     border: 1px solid #000000;
     transform: rotate(180deg);
 }
+.user-main h2 {
+    font-size: 20px;
+}
+
 .user-main {
     display: flex;
     width: 100%;
@@ -23,6 +28,23 @@
     padding-bottom: 2rem;
 }
 .user-main-rechts {
-    max-width: 60%;
+    width: 60%;
     margin-right: 1rem;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.quote {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+.quote h1 {
+    font-size: 30px;
+}
+.kalender h3 {
+    font-size: 25px;
+}
+.kalenderimg {
+    margin-top: 1rem;
 }

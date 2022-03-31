@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300;400;600;800&display=swap');
+
+html {
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+:root {
+    --bg: #F3E9D2;
+    --primary: #114B5F;
+    --green:#C6DABF;
+    --red:#FF0000;
+    --lbl: #EDEFF2;
+    --black: #000000;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 750px){
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.container{
+    max-width: 100%;
+
+}
+
+#review{
+    
+    height: 15em;
+    background-color: var(--lbl);
+    outline-color: 2px var(--black);
+}
+
+#review img{
+    margin-left: 2em;
+    height: 4em;
+    
+}
+
+#pf{
+    border-radius: 50%;
+}
+
+.naam img{
+    height: 3em;
+}
+
+#reviewinside{
+    margin-top: 5em;
+    display: flex;
+    width: 80%;
+
+}
+
+.boven{
+    display: flex;
+    flex-direction: row;
+    justify-content: row;
+}
+
+#naam img{
+    width: 15em;
+}
+
+div#review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#beneden{
+    width: 80%;
+    display: flex;
+
+}
+
+#beneden p{
+    margin-left: 2em;
+}
+
+#reviews span{
+    display: inline-block;
+    border-left: 2px var(--black);
+    margin: 0 10px;
+    height: 125px;
+    left: 50%;
+}
+
+#Aantal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rating{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#nummer{
+    font-size: 16.5em;
+}
+
+
