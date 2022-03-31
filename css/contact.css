@@ -13,8 +13,6 @@ html {
     --black: #000000;
 }
 
-
-
 h1{
     color: var(--black);
     margin-top: 2em;
@@ -35,8 +33,10 @@ input{
     border: 1px solid #ccc;
     font-size: 1.375em;
     padding: 0.75em;
-    width: 35%;
+    width: 15em;
+    background-color: var(--lbl);
     
+    border: 0px;
 
     border-radius: 20px;
 }
@@ -49,20 +49,11 @@ label, legend{
 
 }
 
-input{
-    background-color: var(--lbl);
-    width: 35%;
-    border: 0px;
-
-}
-
 form{
     margin: 2em ;
     
 }
-div{
-    margin: 1em;
-}
+
 
 #Bericht{
     height: 10em;
@@ -71,13 +62,28 @@ div{
 .container{
     margin: 0;
     padding: 0%;
+    max-width: 100%;
 }
 
+main{
+    display: flex;
+}
 @media (max-width: 750px) {
     #afbeelding{
         display: none;
     }
 }
+#afbeelding img{
+    display: flex;
+
+    max-width: 75%;
+   text-align: center;
+}
 #afbeelding{
-    display: absolute;
+    text-align: center;
+}
+section#afbeelding{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
