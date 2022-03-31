@@ -400,16 +400,15 @@ span[aria-hidden="true"] span:nth-child(3) {
 }
   
 span[aria-hidden="false"] span:nth-child(1) {
-    transform: rotate(45deg) translateY(7.5px);
+    transform: rotate(45deg) translateY(3px);
 }
   
 span[aria-hidden="false"] span:nth-child(2) {
-    width: 0%;
-    opacity: 0;
+    display: none;    
 }
   
 span[aria-hidden="false"] span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-7.5px);
+    transform: rotate(-45deg) translateY(-3px);
 }
 
 nav {
