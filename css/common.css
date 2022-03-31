@@ -6,7 +6,12 @@
 }
 
 :root {
+<<<<<<< HEAD
     --bg: #F9F4E9;
+=======
+    --bg: #FCF9F4;
+    --offwhite :#F3E9D2;
+>>>>>>> e94b4f79ec35a6a253b6f90ffc0b7cf7a6d7f7cb
     --primary: #114B5F;
     --green:#C6DABF;
     --red:#FF0000;
@@ -14,6 +19,7 @@
 
 html {
     font-family: 'Roboto Slab', serif;
+    background-color: var(--bg);
 }
 
 body {
@@ -104,7 +110,7 @@ header h1.logo{
 header li a{
     justify-content: flex-start;
     display: flex;
-    color: var(--bg);
+    color: var(--offwhite);
     text-decoration: none;
 }
 
@@ -257,7 +263,7 @@ footer {
     justify-content: center;
     top: 100%;
     background-color: var(--primary);
-    color: var(--bg);
+    color: var(--offwhite);
 }
 .footer-title {
     font-weight: 800;
@@ -283,7 +289,7 @@ footer ul {
 }
 
 footer a {
-    color: var(--bg);
+    color: var(--offwhite);
 }
 
 footer li::before {
@@ -431,16 +437,15 @@ span[aria-hidden="true"] span:nth-child(3) {
 }
   
 span[aria-hidden="false"] span:nth-child(1) {
-    transform: rotate(45deg) translateY(7.5px);
+    transform: rotate(45deg) translateY(3px);
 }
   
 span[aria-hidden="false"] span:nth-child(2) {
-    width: 0%;
-    opacity: 0;
+    display: none;    
 }
   
 span[aria-hidden="false"] span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-7.5px);
+    transform: rotate(-45deg) translateY(-3px);
 }
 
 nav {
