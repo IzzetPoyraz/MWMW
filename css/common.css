@@ -231,7 +231,7 @@ header li a{
 .lognFoto {
     text-align: center;
 }
-.popup-main  span {
+.popup-main  .lijn {
     border: 1px solid #000000;
     transform: rotate(180deg);
 }
