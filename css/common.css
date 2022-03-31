@@ -258,6 +258,10 @@ header li a{
     transition: all 0.3ms ease;
 }
 
+.popupFoto {
+    height:150px; 
+    width:250px;
+}
 
 /*FOOTER*/
 
