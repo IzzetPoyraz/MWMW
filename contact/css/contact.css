@@ -45,7 +45,6 @@ input{
 label, legend{
     color: var(--black);
     display: block;
-    font-size: 1.375em;
     font-weight: 600;
 
 }
@@ -73,10 +72,18 @@ main{
     #afbeelding{
         display: none;
     }
+    #foto{
+        visibility: hidden;
+    }
+
 }
+section#afbeelding{
+    margin-left: 0;
+}
+
 #afbeelding img{
     display: flex;
-
+    min-width: 25%;
     max-width: 75%;
    text-align: center;
 }

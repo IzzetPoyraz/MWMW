@@ -258,6 +258,10 @@ header li a{
     transition: all 0.3ms ease;
 }
 
+.popupFoto {
+    height:150px; 
+    width:250px;
+}
 
 /*FOOTER*/
 
@@ -279,6 +283,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding: clamp(1rem, 8vw, 4rem);
 }
 
 footer ul {
