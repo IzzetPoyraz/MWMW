@@ -16,6 +16,11 @@
     gap: 1rem;
 }
 
+.shop-box img {
+    border-radius: 10px;
+    border: 3px solid var(--green);
+}
+
 .description-box {
     display: flex;
     flex-direction: column;
@@ -31,6 +36,7 @@ fieldset {
     position: relative;
     display: flex;
     flex-direction: column;
+    border: none;
 }
 
 fieldset div:nth-of-type(1) {
