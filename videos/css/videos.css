@@ -41,9 +41,38 @@ main{
     margin: 0.5em;
 }
 
-#first, #second, #third, #fourth{
+#first{
     display: flex;
-    
-   
+    height: 25em;
+}
 
+#second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25em;
+}
+
+#second img{
+    width: 43em;
+}
+
+#third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25em;
+}
+
+#grootvid{
+    background-color: var(--lbl);
+    height: 25em;
+    width: 39.5em;
+}
+
+#fourth{
+
+    margin-top: 5em;
+    display: flex;
+    height: 25em;
 }
