@@ -43,15 +43,15 @@ a {
     display: none;
 }
 
-#menu[aria-expanded=false] + nav + .login {
-    display: none;
-}
-
 #menu[aria-expanded=true] + nav {
     animation: dropdown 0.5s forwards;
     transition: all 0.3s linear;
     opacity: 0;
     display: block;
+}
+
+#menu[aria-expanded=false] + nav + .login{
+    display: none;
 }
 
 .content {
@@ -290,6 +290,10 @@ address::after {
 
     #menu[aria-expanded=false] + nav {
         display: block;
+    }
+
+    #menu[aria-expanded=false] + nav + .login {
+        display: flex;
     }
 
 
