@@ -229,7 +229,17 @@ header li a{
     border: 1px solid #000000;
     transform: rotate(180deg);
 }
-
+.popup input{
+    padding:10px;
+    border-radius:10px;
+    height: 2rem;
+    background-color: var(--bg);
+    border: 2px solid var(--primary);
+    transition-duration: 0.2s;
+}
+.popup input:focus{
+    background: rgb(0, 0, 0,0.04);;
+}
 .popupBtn {
     background-color: var(--primary);
     color: var(--bg);
