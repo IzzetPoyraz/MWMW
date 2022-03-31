@@ -6,12 +6,8 @@
 }
 
 :root {
-<<<<<<< HEAD
-    --bg: #F9F4E9;
-=======
     --bg: #FCF9F4;
     --offwhite :#F3E9D2;
->>>>>>> e94b4f79ec35a6a253b6f90ffc0b7cf7a6d7f7cb
     --primary: #114B5F;
     --green:#C6DABF;
     --red:#FF0000;
@@ -251,9 +247,6 @@ header li a{
     color: var(--primary);
     border: 2px solid var(--primary);
     transition: all 0.3ms ease;
-}
-.slutien {
-    
 }
 
 
