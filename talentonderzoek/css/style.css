@@ -38,6 +38,12 @@ main .links button {
     margin-left: 7em;
 }
 
+a, a:hover, a:focus, a:active {
+    color: #fff;
+    text-decoration: none;
+    color: inherit;
+}
+
 main .links button:hover {
     background-color: var(--button-hover-color);
 }
