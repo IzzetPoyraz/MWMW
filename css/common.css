@@ -99,6 +99,12 @@ header h1.logo{
     height: 100%;
 }
 
+header h1 a {   
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
 .logo-box {
     margin-left: clamp(1rem, 8vw, 4rem);
 }

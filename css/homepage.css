@@ -21,6 +21,7 @@ p {
     flex-direction: column;
     gap: 2rem;
     padding-bottom: 0;
+    position: relative;
 }
 
 .eyecatcher-box::after {
@@ -29,6 +30,7 @@ p {
     height: 2px;
     width: 100%;
     background-color: #114B5F;
+    opacity: 0.5;
     margin-left: auto;
     margin-right: auto;
 }
@@ -68,6 +70,7 @@ p {
     height: 2px;
     width: 100%;
     background-color: #114B5F;
+    opacity: 0.5;
     margin-left: auto;
     margin-right: auto;
 }
@@ -77,6 +80,7 @@ p {
     flex-direction: column;
     padding-bottom: 0;
     gap: 2rem;
+    position: relative;
 }
 
 .wiezijnwe-main {
@@ -132,6 +136,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
 }
 
 .tools-box::after {
@@ -140,6 +145,7 @@ p {
     height: 2px;
     width: 100%;
     background-color: #114B5F;
+    opacity: 0.5;
     margin-left: auto;
     margin-right: auto;
 }
@@ -191,6 +197,7 @@ p {
         flex-direction: row;
         justify-content: space-between;
         height: 30rem;
+        padding-bottom: clamp(1rem, 8vw, 4rem);
     }
 
     .eyecatcher-main {
@@ -206,9 +213,12 @@ p {
         width: 40%;
     }
 
-    /* werkt nog niet */
     .eyecatcher-box::after {
-        display: none;
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     /*2*/
@@ -216,6 +226,15 @@ p {
     .wiezijnwe-box {
         flex-direction: row;
         justify-content: space-between;
+        padding-bottom: clamp(1rem, 8vw, 4rem);
+    }
+
+    .wiezijnwe-box::after {
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .wiezijnwe-main {
@@ -235,12 +254,19 @@ p {
         min-width: 20rem;
     }
 
-    /* werkt nog niet */
-    .wiezijnwe-box::after {
-        display: none;
+    /*3*/
+
+    .tools-box::after {
+        position: absolute;
+        bottom: 0;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    /*3*/
+    .tools-box {
+        margin-bottom: 2rem;
+    }
 
     .tools {
         flex-direction: row;
