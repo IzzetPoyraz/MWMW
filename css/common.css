@@ -162,6 +162,7 @@ header li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 .container-popup.show{
     pointer-events: auto;
@@ -173,6 +174,7 @@ header li a{
     width: 650px;
     max-width: 100%;
     border-radius: 5px;
+
     box-shadow: rgb(0, 0, 0,0.3);
 
 }
