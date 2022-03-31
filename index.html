@@ -7,13 +7,12 @@
     <link href="css/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="css/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/homepage.css">
     <title>Mijn weg, mijn wil</title>
 </head>
 <body>
-    <!---->
+    
 <div class="container">
- 
-
     <header>
         <div class="content">
             <div class="logo-box">
@@ -29,22 +28,90 @@
                     <li><a class="active" href="#">Wie zijn we?</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Reviews</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="/contact/index.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="login">
-                <button class="loginBtn"><a href=""><img src="../assets/Login.png" alt="LoginLogo"></a></button>
+                <button class="loginBtn" id="open"><a href="#" id="open"><img src="/assets/Login.png" alt="LoginLogo"></a></button>
             </div>
         </div>
     </header>
     <main>
-        <h1>hallo</h1>
+        <section class="eyecatcher-box">
+            <div class="eyecatcher-main">
+                <p class="quote">"De stappen doorheen het traject leerde ik te gebruiken als een lifestyle."</p>
+                <p class="quote-name">- Tia</p>
+                <a href="#" class="reviews-link">Bekijk andere reviews</a>
+            </div>
+            <div class="eyecatcher-img">
+                <img src="/assets/undraw_farm_girl_dnpe 2.svg" alt="">
+            </div>
+        </section>
+
+        <section class="wiezijnwe-box">
+            <div class="wiezijnwe-main">
+                <h2>Wie zijn we?</h2>
+                <p class="highlight">Een self-coaching traject voor adolescenten.</p>
+                <p>Onze missie is hen een hoger niveau van zelfkennis bijbrengen en hun veerkrachtiger maken in stressvolle situaties.</p>
+                <p>Zelfbewuste adolescenten zijn in staat om vroeger in het leven heldere keuzes te maken, wat leidt tot een betere levenskwaliteit.</p>
+                <div class="counter-box">
+                    <p>Aantal mensen geholpen:</p>
+                    <p>1</p>
+                </div>
+            </div>
+            <div class="wiezijnwe-plan">
+                <img src="/assets/planhome.svg" alt="">
+            </div>
+        </section>
+        <section class="tools-box">
+            <h2>De 4 krachtige tools van de box</h2>
+            <div class="tools">
+                <div class="tool-box">
+                    <div class="tools-showcase">
+                        <img src="/assets/undraw_secure_login_pdn4.svg" alt="">
+                    </div>
+                    <p>Het platform</p>
+                </div>
+                <div class="tool-box">
+                    <div class="tools-showcase">
+                        <img src="/assets/undraw_notebook_re_id0r 1.svg" alt="">
+                    </div>
+                    <p>Gids met inspiratiekaarten</p>
+                </div>
+                <div class="tool-box">
+                    <div class="tools-showcase">
+                        <img src="/assets/star-profile.svg" alt="">
+                    </div>
+                    <p>Talentonderzoek</p>
+                </div>
+                <div class="tool-box">
+                    <div class="tools-showcase">
+                        <img src="/assets/undraw_group_video_re_btu7 2.svg" alt="">
+                    </div>
+                    <p>Coaching</p>
+                </div>
+            </div>
+            <div class="solution-box">
+                <h2>Onze oplossing</h2>
+                <p>De 'Mijn wil, Mijn weg' box gidst je doorheen een zelftraject en maakt het initiatief in je wakker. Door het denken, doen en voelen met elkaar te combineren wordt je op verschillende manieren geprikkeld. Deze toolbox helpt jou in het uitzetten van doelgerichte acties dat binnen de eigen controle liggen.</p>
+            </div>
+        </section>
+
+
+
+        
+
+
+
+
+
         <button id="open">LOG IN</button>
         <section class="container-popup" id="container-popup">
+            
             <div class="popup">
+                <a class="sluiten" id="sluiten"href="#">X</a>
                 <h1>Mijn weg, Mijn wil</h1>
-                <div class="popup-main">
-                    
+                <div class="popup-main"> 
                     <div class="popup-register">
                         <h2>Register</h2>
                         <div></div>
@@ -73,14 +140,14 @@
                             </div>    
                             <div class="pass">
                                 <label for="name">Wachtwoord: </label>
-                                <input type="text" name="name" id="name" required>
+                                <input type="password" name="name" id="name" required>
                             </div>    
                             <div class="pass-repeat">
                                 <label for="name">Bevestig wachtwoord: </label>
-                                <input type="text" name="name" id="name" required>
+                                <input type="password" name="name" id="name" required>
                             </div>  
                         </form>  
-                        <button type="submit">registreren</button>     
+                        <a class="popupBtn"type="submit"href="">registreren</a>     
                     </div>
                         
                     <span></span>
@@ -93,16 +160,16 @@
                                 </div>
                                 <div class="pass">
                                     <label for="name">Wachtwoord: </label>
-                                    <input type="text" name="name" id="name" required>
+                                    <input type="password" name="name" id="name" required>
                                 </div>
                             </form>
-                        <button type="submit">Log in</button>
+                        <a class="popupBtn"type="submit"href="">Log in</a>
                         <div class="loginFoto">
-                            <img src="../assets/LoginFoto.png" alt="" height="150px" width="150px">
+                            <img src="/assets/LoginFoto.png" alt=""height="150px" width="250px">
                         </div>
                     </div>
                 </div>
-                <button id="sluiten">sluiten</button>
+                
             </div>
             
         </section>
