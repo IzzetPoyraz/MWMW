@@ -1,0 +1,10 @@
+/*1*/
+
+fieldset div{
+    display: flex;
+    gap: 1rem;
+}
+
+input {
+    order: -1;
+}
