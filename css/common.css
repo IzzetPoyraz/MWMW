@@ -330,6 +330,18 @@ address::after {
     margin-left: auto;
     margin-right: auto;
 }
+
+.social-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;    
+}
+
+.social-box img {
+    width: 1rem;
+    height: auto;
+}
+
 /*
  * RESPONSIVE
  */
