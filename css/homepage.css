@@ -36,21 +36,23 @@ p {
 .eyecatcher-main {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 .quote {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: 800;
+    max-width: 50rem;
 }
 
 .quote-name {
     align-self: flex-end;
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
 .reviews-link {
     color: var(--primary);
+    font-size: 20px;
 }
 
 .eyecatcher-img {
@@ -73,6 +75,7 @@ p {
 .wiezijnwe-box {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0;
     gap: 2rem;
 }
 
@@ -84,7 +87,8 @@ p {
 .wiezijnwe-main h2 {
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 1rem;
+    font-size: 32px;
+    margin-bottom: 1rem;    
 }
 
 .wiezijnwe-main p {
@@ -95,7 +99,7 @@ p {
     color: #1BB55C;
 }
 
-.wiezijnwe-main p:nth-of-type(2) {
+.wiezijnwe-main p:not(.highlight) {
     margin-bottom: 2rem;
 }
 
@@ -170,11 +174,91 @@ p {
 }
 
 .tools-showcase img {
-
     width: 80%;
     height: auto;
 }
 
 .solution-box {
     text-align: center;
+}
+
+/* RESPONSIVE */ 
+
+@media (min-width: 46.875em) {
+
+    /*1*/
+    .eyecatcher-box {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30rem;
+    }
+
+    .eyecatcher-main {
+        justify-content: center;
+    }
+
+    .eyecatcher-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .quote-name {
+        width: 40%;
+    }
+
+    /* werkt nog niet */
+    .eyecatcher-box::after {
+        display: none;
+    }
+
+    /*2*/
+    
+    .wiezijnwe-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .wiezijnwe-main {
+        width: 50%;
+    }
+
+    .wiezijnwe-main p{
+        max-width: 35rem;
+    }
+
+    .wiezijnwe-plan {
+        width: 50%;
+    }
+
+    .wiezijnwe-plan img {
+        width: 60%;
+        min-width: 20rem;
+    }
+
+    /* werkt nog niet */
+    .wiezijnwe-box::after {
+        display: none;
+    }
+
+    /*3*/
+
+    .tools {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+
+    .solution-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .solution-box p{
+        max-width: 50%;
+    }
+
 }
