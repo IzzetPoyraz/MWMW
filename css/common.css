@@ -192,7 +192,7 @@ header li a{
     margin-bottom: 1rem;
 }
 .popup-main {
-    display: flex;
+    display: block;
     width: 100%; 
     padding-bottom: 2rem;   
 
@@ -227,13 +227,6 @@ header li a{
 .popup-login {
     margin-left: 1rem;
     width: 100%;
-}
-.lognFoto {
-    text-align: center;
-}
-.popup-main  .lijn {
-    border: 1px solid #000000;
-    transform: rotate(180deg);
 }
 .popup input{
     padding:10px;
@@ -434,6 +427,16 @@ address::after {
         list-style: none;
         padding-bottom: 2rem;
         gap: 6rem;
+    }
+    .popup-main{
+        display: flex;
+    }
+    .popup-main  .lijn {
+        border: 1px solid #000000;
+        transform: rotate(180deg);
+    }
+    .lognFoto {
+        text-align: center;
     }
 
 }
