@@ -45,7 +45,6 @@ input{
 label, legend{
     color: var(--black);
     display: block;
-    font-size: 1.375em;
     font-weight: 600;
 
 }
