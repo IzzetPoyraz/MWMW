@@ -25,6 +25,7 @@
 }
 .vector-img img {
     width: 100%;
+    height: auto;
     padding-bottom: 2rem;
 }
 .user-main-rechts {
@@ -48,4 +49,34 @@
 .kalenderimg {
     margin-top: 1rem;
 }
+.kalenderimg img {
+    width: 100%;
+    height: 100%;
+}
 /*2de header*/
+@media (max-width: 750px) {
+    .lijn {
+        display: none;
+    }
+    .user-main{
+        display: block;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .kalender {
+        margin: 0;
+    }
+    .kalender {
+        max-height: 300px;
+        max-width: 400px;
+        margin-bottom: 10rem;
+    }
+    .kalender img {
+        height: 400px;
+        width: 400px;
+        
+    }
+}

@@ -38,3 +38,26 @@
 .meeting h2 {
     margin-bottom: 1rem;
 }
+
+@media (max-width: 750px) {
+    .coaching-main{
+        display: block;
+    }
+    .coachingimg img {
+        height: 300px;
+        width: 350px;
+    }
+    .coaching-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .meeting {
+        margin-top: 2rem;
+    }
+    .coaching-right .h2 {
+        padding-left: 5rem;
+    }
+}
