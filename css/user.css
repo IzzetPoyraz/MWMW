@@ -23,6 +23,23 @@
     padding-bottom: 2rem;
 }
 .user-main-rechts {
-    max-width: 60%;
+    width: 60%;
     margin-right: 1rem;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.quote {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+}
+.quote h1 {
+    font-size: 40px;
+}
+.kalender h3 {
+    font-size: 28px;
+}
+.kalenderimg {
+    margin-top: 1rem;
 }
