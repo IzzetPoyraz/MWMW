@@ -1,0 +1,54 @@
+:root{
+    --button-color: #114B5F;
+    --button-hover-color: #1b728f;
+    --border-radius: 5px;
+}
+
+h1 {
+    font-size: 1.75em;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    font-size: 2em;
+    font-weight: 400;
+    margin-top: 1em;
+    display: inline-block;
+}
+
+div .vraag{
+    width: 25%;
+    margin-left: 1em;
+}
+
+.vraag button {
+    display: block;
+    border: 0;
+    width: 25%;
+    background-color: var(--button-color);
+    border-radius: var(--border-radius);
+    color: #fff;
+    font-weight: 400;
+    padding: 1% 2%;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 2px #ddd;
+}
+
+.vraag button:hover {
+    background-color: var(--button-hover-color);
+}
+
+
+
+
+
+
+/*desktop / tablet*/
+@media (min-width: 750px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+}
