@@ -42,23 +42,9 @@ main .links button:hover {
     background-color: var(--button-hover-color);
 }
 
-main .links{
-    width: 100%;
-}
-
-main .rechts{
-    width: 100%;
-}
-
 img {
     width: 100%;
 }
-
-div.rechts {
-    margin-top: 5em;
-}
-
-
 
 
 
@@ -69,12 +55,11 @@ div.rechts {
         font-size: 3em;
     }
 
-    main .links{
+    div .links{
         width: 50%;
         float: left;
     }
-
-    main .rechts{
+    div .rechts {
         width: 50%;
         float: right;
     }

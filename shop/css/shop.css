@@ -1,3 +1,12 @@
+:root {
+    --bg: #FCF9F4;
+    --offwhite :#F3E9D2;
+    --primary: #114B5F;
+    --green:#C6DABF;
+    --red:#FF0000;
+    --greenvalid: #1BB55C;
+}
+
 /*1*/
 
 .shop-box {
@@ -14,13 +23,38 @@
     order: -1;
 }
 
+div fieldset {
+    margin-top: 3rem;
+}
+
+fieldset {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset div:nth-of-type(1) {
+    margin-bottom: 1rem;
+}
+
 fieldset div{
     display: flex;
     gap: 1rem;
 }
 
+fieldset div p {
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -4rem;
+    left: 0rem;
+}
+
 input {
     order: -1;
+}
+
+label {
+    text-decoration: underline;
 }
 
 .description-box li:nth-child(4) {
@@ -28,8 +62,54 @@ input {
     position: relative;
 }
 
-.description-box li:nth-child(4):before + div fieldset div #higherPrice:checked {
+input[type="radio"]:checked + p{
+    color: var(--red); 
+}
+
+input[type="radio"] + p{
+    color: var(--greenvalid); 
+}
+
+input[type="radio"]:checked + p::before{
+    content: 'x';
+    position: absolute;
+    left: -1.2rem;
+}
+
+input[type="radio"] + p::before{
     content: '✓';
     position: absolute;
     left: -1.2rem;
-  }
+}
+
+.koopBtn a {
+    color: var(--bg);
+    width: 100%;
+    text-align: center;
+}
+
+.koopBtn {
+    display: flex;
+    padding: 2% 4%;
+    justify-content: center;
+    width: 50%;
+    background-color: var(--primary);
+    border-radius: 5px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 46.875em) {
+    .shop-box {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .description-box {
+        order: 0;
+    }
+
+}
