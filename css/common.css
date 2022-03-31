@@ -298,7 +298,6 @@ address::after {
         display: flex;
     }
 
-
     header ul {
         display: flex;
         flex-direction: row;
