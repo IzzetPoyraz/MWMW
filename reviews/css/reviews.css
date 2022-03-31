@@ -9,7 +9,7 @@ body{
 }
 
 :root {
-    --bg: #F3E9D2;
+    --bg: #FCF9F4;
     --primary: #114B5F;
     --green:#C6DABF;
     --red:#FF0000;
@@ -112,6 +112,10 @@ div#beneden{
 
 #nummer{
     font-size: 16.5em;
+}
+.lijn {
+    border: 1px solid #000000;
+    transform: rotate(180deg);
 }
 
 
