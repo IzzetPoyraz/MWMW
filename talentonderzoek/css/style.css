@@ -24,7 +24,6 @@ div .links{
 }
 
 main .links button {
-    display: block;
     border: 0;
     width: 25%;
     background-color: var(--button-color);
@@ -34,18 +33,30 @@ main .links button {
     padding: 1% 2%;
     cursor: pointer;
     box-shadow: 0px 0px 4px 2px #ddd;
-    margin-left: 7em;
     margin-top: 5px;
+    justify-content: center;
+    margin-left: 7em;
 }
 
 main .links button:hover {
     background-color: var(--button-hover-color);
 }
 
+main .links{
+    width: 100%;
+}
+
+main .rechts{
+    width: 100%;
+}
+
 img {
     width: 100%;
 }
 
+div.rechts {
+    margin-top: 5em;
+}
 
 
 /*desktop / tablet*/
@@ -56,12 +67,24 @@ img {
     }
 
     div .links{
+        display: flex;
         width: 50%;
-        float: left;
+        flex-direction: column;
     }
-    div .rechts {
+
+    div .rechts{
+        display: flex;
+        flex-direction: column;
         width: 50%;
-        float: right;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    main .links button {
+        margin-left: 15em;
     }
 
 }
+
