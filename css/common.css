@@ -15,6 +15,7 @@
 
 html {
     font-family: 'Roboto Slab', serif;
+    background-color: var(--bg);
 }
 
 body {
@@ -105,7 +106,7 @@ header h1.logo{
 header li a{
     justify-content: flex-start;
     display: flex;
-    color: var(--bg);
+    color: var(--offwhite);
     text-decoration: none;
 }
 
@@ -227,7 +228,7 @@ footer {
     justify-content: center;
     top: 100%;
     background-color: var(--primary);
-    color: var(--bg);
+    color: var(--offwhite);
 }
 .footer-title {
     font-weight: 800;
@@ -253,7 +254,7 @@ footer ul {
 }
 
 footer a {
-    color: var(--bg);
+    color: var(--offwhite);
 }
 
 footer li::before {
