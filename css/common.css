@@ -176,16 +176,19 @@ header li a{
     width: 650px;
     max-width: 100%;
     border-radius: 5px;
-
     box-shadow: rgb(0, 0, 0,0.3);
 
 }
 .popup h1,h2,h3{
     text-align: center;
 }
+.popup h2{
+    margin-bottom: 1rem;
+}
 .popup-main {
     display: flex;
-    width: 100%;
+    width: 100%; 
+    padding-bottom: 2rem;   
 
 }
 .popup-register {
@@ -199,12 +202,19 @@ header li a{
 .user {
     display: flex;
 }
+.user div {
+    flex: 1;
+}
 .user .name {
     margin-right:0.25rem ;
 }
 .popup-register{
     margin: 0 1rem 0 1rem;
 }
+.popup-register input,.popup-login input {
+    width: 100%;
+}
+
 .register input{
    justify-content: center;
 }
@@ -220,6 +230,24 @@ header li a{
     transform: rotate(180deg);
 }
 
+.popupBtn {
+    background-color: var(--primary);
+    color: var(--bg);
+    height: 2rem;
+    padding: 0.35rem;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 0.5rem ;
+    width: 100%;
+    transition-duration: 0.4s;
+
+}
+.popupBtn:hover {
+    background-color: var(--bg);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    transition: all 0.3ms ease;
+}
 
 
 /*FOOTER*/

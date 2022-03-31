@@ -32,7 +32,7 @@
                 </ul>
             </nav>
             <div class="login">
-                <button class="loginBtn" id="open"><a href="#   " id="open"><img src="../assets/Login.png" alt="LoginLogo"></a></button>
+                <button class="loginBtn" id="open"><a href="#" id="open"><img src="/assets/Login.png" alt="LoginLogo"></a></button>
             </div>
         </div>
     </header>
@@ -107,7 +107,9 @@
 
         <button id="open">LOG IN</button>
         <section class="container-popup" id="container-popup">
+            
             <div class="popup">
+                <a class="sluiten" id="sluiten"href="#">X</a>
                 <h1>Mijn weg, Mijn wil</h1>
                 <div class="popup-main"> 
                     <div class="popup-register">
@@ -138,14 +140,14 @@
                             </div>    
                             <div class="pass">
                                 <label for="name">Wachtwoord: </label>
-                                <input type="text" name="name" id="name" required>
+                                <input type="password" name="name" id="name" required>
                             </div>    
                             <div class="pass-repeat">
                                 <label for="name">Bevestig wachtwoord: </label>
-                                <input type="text" name="name" id="name" required>
+                                <input type="password" name="name" id="name" required>
                             </div>  
                         </form>  
-                        <button type="submit">registreren</button>     
+                        <a class="popupBtn"type="submit"href="">registreren</a>     
                     </div>
                         
                     <span></span>
@@ -158,16 +160,16 @@
                                 </div>
                                 <div class="pass">
                                     <label for="name">Wachtwoord: </label>
-                                    <input type="text" name="name" id="name" required>
+                                    <input type="password" name="name" id="name" required>
                                 </div>
                             </form>
-                        <button type="submit">Log in</button>
+                        <a class="popupBtn"type="submit"href="">Log in</a>
                         <div class="loginFoto">
-                            <img src="../assets/LoginFoto.png" alt="" height="150px" width="150px">
+                            <img src="/assets/LoginFoto.png" alt=""height="150px" width="250px">
                         </div>
                     </div>
                 </div>
-                <button id="sluiten">sluiten</button>
+                
             </div>
             
         </section>
