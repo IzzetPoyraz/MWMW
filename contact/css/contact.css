@@ -88,3 +88,6 @@ section#afbeelding{
     align-items: center;
     justify-content: center;
 }
+.contactbtn {
+    margin-top: 1rem;
+}
