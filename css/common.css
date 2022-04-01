@@ -188,6 +188,9 @@ header li a{
 .popup h1,h2,h3{
     text-align: center;
 }
+.popup h3 {
+    font-size: 30px;
+}
 .popup h2{
     margin-bottom: 1rem;
 }
@@ -235,6 +238,7 @@ header li a{
     background-color: var(--bg);
     border: 2px solid var(--primary);
     transition-duration: 0.2s;
+    margin-bottom: 1rem;
 }
 .popup input:focus{
     background: rgb(0, 0, 0,0.04);;
@@ -246,7 +250,7 @@ header li a{
     padding: 0.35rem;
     border-radius: 3px;
     text-align: center;
-    margin-top: 0.5rem ;
+    margin-top: 1rem ;
     width: 100%;
     transition-duration: 0.4s;
 
@@ -258,6 +262,10 @@ header li a{
     transition: all 0.3ms ease;
 }
 
+.popupFoto {
+    height:150px; 
+    width:250px
+}
 
 /*FOOTER*/
 
