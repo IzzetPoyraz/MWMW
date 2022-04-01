@@ -156,6 +156,27 @@ header li a{
     height: 100%;
 }
 
+.secondheader + .login{
+    visibility: hidden;
+}
+
+.secondheader{
+    color: var(--primary);
+
+}
+
+header:nth-child(2){
+    background-color: var(--green);
+}
+
+.header2{
+    background-color: var(--green);
+    height: 3rem;
+}
+
+div.content.header2 ul li a{
+    color: var(--primary);
+}
 /*/*POPUP*/
 
 .container-popup{
@@ -447,6 +468,8 @@ address::after {
     .lognFoto {
         text-align: center;
     }
+
+    
 
 }
 
