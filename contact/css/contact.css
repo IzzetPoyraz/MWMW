@@ -5,7 +5,8 @@ html {
 }
 
 :root {
-    --bg: #F3E9D2;
+    --bg: #FCF9F4;
+    --offwhite :#F3E9D2;
     --primary: #114B5F;
     --green:#C6DABF;
     --red:#FF0000;
@@ -29,27 +30,24 @@ body{
     
 }
 
-input{
+form input{
     border: 1px solid #ccc;
     font-size: 1.375em;
     padding: 0.75em;
     width: 15em;
     background-color: var(--lbl);
-    
     border: 0px;
-
     border-radius: 20px;
 }
 
 label, legend{
     color: var(--black);
     display: block;
-    font-size: 1.375em;
     font-weight: 600;
 
 }
 
-form{
+.form{
     margin: 2em ;
     
 }
@@ -72,10 +70,18 @@ main{
     #afbeelding{
         display: none;
     }
+    #foto{
+        visibility: hidden;
+    }
+
 }
+section#afbeelding{
+    margin-left: 0;
+}
+
 #afbeelding img{
     display: flex;
-
+    min-width: 25%;
     max-width: 75%;
    text-align: center;
 }
@@ -86,4 +92,7 @@ section#afbeelding{
     display:flex;
     align-items: center;
     justify-content: center;
+}
+.contactbtn {
+    margin-top: 1rem;
 }

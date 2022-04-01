@@ -6,14 +6,17 @@
 }
 
 :root {
-    --bg: #F3E9D2;
+    --bg: #FCF9F4;
+    --offwhite :#F3E9D2;
     --primary: #114B5F;
     --green:#C6DABF;
     --red:#FF0000;
+    --shadow-light-color: rgba(0, 0, 0, 0.2);
 }
 
 html {
     font-family: 'Roboto Slab', serif;
+    background-color: var(--bg);
 }
 
 body {
@@ -43,6 +46,10 @@ a {
     display: none;
 }
 
+div.secondheader {
+    display: none;
+}
+
 #menu[aria-expanded=true] + nav {
     animation: dropdown 0.5s forwards;
     transition: all 0.3s linear;
@@ -61,6 +68,7 @@ a {
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: relative;
+    box-shadow: 0px 15px 20px 0px var(--shadow-light-color);
 }
 
 header ul {
@@ -97,6 +105,12 @@ header h1.logo{
     height: 100%;
 }
 
+header h1 a {   
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
 .logo-box {
     margin-left: clamp(1rem, 8vw, 4rem);
 }
@@ -104,7 +118,7 @@ header h1.logo{
 header li a{
     justify-content: flex-start;
     display: flex;
-    color: var(--bg);
+    color: var(--offwhite);
     text-decoration: none;
 }
 
@@ -148,6 +162,20 @@ header li a{
     height: 100%;
 }
 
+.secondnav + .login{
+    visibility: hidden;
+}
+
+.secondnav{
+    color: var(--primary);
+
+}
+
+
+
+div.content.secondheader ul li a{
+    color: var(--primary);
+}
 /*/*POPUP*/
 
 .container-popup{
@@ -174,16 +202,22 @@ header li a{
     width: 650px;
     max-width: 100%;
     border-radius: 5px;
-
     box-shadow: rgb(0, 0, 0,0.3);
 
 }
 .popup h1,h2,h3{
     text-align: center;
 }
+.popup h3 {
+    font-size: 30px;
+}
+.popup h2{
+    margin-bottom: 1rem;
+}
 .popup-main {
-    display: flex;
-    width: 100%;
+    display: block;
+    width: 100%; 
+    padding-bottom: 2rem;   
 
 }
 .popup-register {
@@ -197,12 +231,19 @@ header li a{
 .user {
     display: flex;
 }
+.user div {
+    flex: 1;
+}
 .user .name {
     margin-right:0.25rem ;
 }
 .popup-register{
     margin: 0 1rem 0 1rem;
 }
+.popup-register input,.popup-login input {
+    width: 100%;
+}
+
 .register input{
    justify-content: center;
 }
@@ -210,15 +251,41 @@ header li a{
     margin-left: 1rem;
     width: 100%;
 }
-.lognFoto {
+.popup input{
+    padding:10px;
+    border-radius:10px;
+    height: 2rem;
+    background-color: var(--bg);
+    border: 2px solid var(--primary);
+    transition-duration: 0.2s;
+    margin-bottom: 1rem;
+}
+.popup input:focus{
+    background: rgb(0, 0, 0,0.04);;
+}
+.popupBtn {
+    background-color: var(--primary);
+    color: var(--bg);
+    height: 2rem;
+    padding: 0.35rem;
+    border-radius: 3px;
     text-align: center;
+    margin-top: 1rem ;
+    width: 100%;
+    transition-duration: 0.4s;
+
 }
-.popup-main  span {
-    border: 1px solid #000000;
-    transform: rotate(180deg);
+.popupBtn:hover {
+    background-color: var(--bg);
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    transition: all 0.3ms ease;
 }
 
-
+.popupFoto {
+    height:150px; 
+    width:250px
+}
 
 /*FOOTER*/
 
@@ -226,7 +293,7 @@ footer {
     justify-content: center;
     top: 100%;
     background-color: var(--primary);
-    color: var(--bg);
+    color: var(--offwhite);
 }
 .footer-title {
     font-weight: 800;
@@ -240,6 +307,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    padding: clamp(1rem, 8vw, 4rem);
 }
 
 footer ul {
@@ -252,7 +320,7 @@ footer ul {
 }
 
 footer a {
-    color: var(--bg);
+    color: var(--offwhite);
 }
 
 footer li::before {
@@ -284,6 +352,18 @@ address::after {
     margin-left: auto;
     margin-right: auto;
 }
+
+.social-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;    
+}
+
+.social-box img {
+    width: 1rem;
+    height: auto;
+}
+
 /*
  * RESPONSIVE
  */
@@ -316,6 +396,19 @@ address::after {
     }
 
     header h1.logo {
+        height: 3rem;
+    }
+
+    div.secondheader {
+        display: flex;
+    }
+
+    header:nth-child(2){
+        background-color: var(--green);
+    }
+    
+    .secondheader{
+        background-color: var(--green);
         height: 3rem;
     }
 
@@ -377,6 +470,18 @@ address::after {
         padding-bottom: 2rem;
         gap: 6rem;
     }
+    .popup-main{
+        display: flex;
+    }
+    .popup-main  .lijn {
+        border: 1px solid #000000;
+        transform: rotate(180deg);
+    }
+    .lognFoto {
+        text-align: center;
+    }
+
+    
 
 }
 

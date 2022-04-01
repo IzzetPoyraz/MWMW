@@ -1,0 +1,84 @@
+:root{
+    --error-color: rgb(200,0,0);
+    --button-color: #114B5F;
+    --button-hover-color: #1b728f;
+    --border-radius: 5px;
+}
+
+h2 {
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-bottom: 1.25em;
+    text-align: center;
+}
+
+input {
+    border: 1px solid #ccc;
+    font-size: 1em;
+    padding: 0.75em;
+    width: 90%;
+    margin-top: 1em;
+}
+
+
+label > abbr.required, legend > abbr.required {
+    color: var(--error-color);
+    text-decoration: none;
+}
+
+.vragen button {
+    border: 0;
+    width: 50%;
+    background-color: var(--button-color);
+    border-radius: var(--border-radius);
+    color: #fff;
+    font-weight: 600;
+    padding: 2% 4%;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 2px #ddd;
+}
+
+.vragen button:hover {
+    background-color: var(--button-hover-color);
+}
+
+section div{
+    margin-bottom: 1.75em;
+}
+
+.opslaan{
+    text-align: center;
+}
+
+
+
+/*desktop / tablet*/
+@media (min-width: 750px) {
+
+    .vragen button, input, label, legend {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 3em;
+        margin-bottom: 1.75em;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+}

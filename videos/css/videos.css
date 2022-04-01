@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@300;400;600;800&display=swap');
+
+html {
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+:root {
+    --bg: #FCF9F4;
+    --offwhite :#F3E9D2;
+    --primary: #114B5F;
+    --green:#C6DABF;
+    --red:#FF0000;
+    --lbl: #EDEFF2;
+    --black: #000000;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#videos{
+    width: 100%;
+}
+
+@media (min-width: 750px){
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #videos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+.container{
+    max-width: 100%;
+
+}
+
+.vid{
+    background-color: var(--lbl);
+    height: 10em;
+    width: 18em;
+    margin: 0.5em;
+}
+
+#first{
+    display: flex;
+    height: 25em;
+}
+
+#second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25em;
+}
+
+#second img{
+    width: 43em;
+}
+
+#third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25em;
+}
+
+#grootvid{
+    background-color: var(--lbl);
+    height: 25em;
+    width: 39.5em;
+}
+
+#fourth{
+    margin-top: 5em;
+    display: flex;
+    height: 25em;
+}
+
+#links h1{
+    margin-left: 4em;
+}
+
