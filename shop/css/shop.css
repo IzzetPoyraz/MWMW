@@ -63,6 +63,10 @@ label {
     text-decoration: underline;
 }
 
+.popup label {
+    text-decoration: none;
+}
+
 .description-box li:nth-child(4) {
     list-style: none;
     position: relative;

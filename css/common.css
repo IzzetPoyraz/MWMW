@@ -46,6 +46,10 @@ a {
     display: none;
 }
 
+div.secondheader {
+    display: none;
+}
+
 #menu[aria-expanded=true] + nav {
     animation: dropdown 0.5s forwards;
     transition: all 0.3s linear;
@@ -158,25 +162,18 @@ header li a{
     height: 100%;
 }
 
-.secondheader + .login{
+.secondnav + .login{
     visibility: hidden;
 }
 
-.secondheader{
+.secondnav{
     color: var(--primary);
 
 }
 
-header:nth-child(2){
-    background-color: var(--green);
-}
 
-.header2{
-    background-color: var(--green);
-    height: 3rem;
-}
 
-div.content.header2 ul li a{
+div.content.secondheader ul li a{
     color: var(--primary);
 }
 /*/*POPUP*/
@@ -399,6 +396,19 @@ address::after {
     }
 
     header h1.logo {
+        height: 3rem;
+    }
+
+    div.secondheader {
+        display: flex;
+    }
+
+    header:nth-child(2){
+        background-color: var(--green);
+    }
+    
+    .secondheader{
+        background-color: var(--green);
         height: 3rem;
     }
 
