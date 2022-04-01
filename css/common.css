@@ -188,6 +188,9 @@ header li a{
 .popup h1,h2,h3{
     text-align: center;
 }
+.popup h3 {
+    font-size: 30px;
+}
 .popup h2{
     margin-bottom: 1rem;
 }
