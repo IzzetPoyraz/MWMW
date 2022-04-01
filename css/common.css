@@ -11,6 +11,7 @@
     --primary: #114B5F;
     --green:#C6DABF;
     --red:#FF0000;
+    --shadow-light-color: rgba(0, 0, 0, 0.2);
 }
 
 html {
@@ -63,6 +64,7 @@ a {
     padding-top: 1rem;
     padding-bottom: 1rem;
     position: relative;
+    box-shadow: 0px 15px 20px 0px var(--shadow-light-color);
 }
 
 header ul {
