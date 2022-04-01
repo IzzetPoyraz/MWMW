@@ -93,4 +93,8 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .vector-img img {
+        max-height: 400px;
+        max-width: 400px;
+    }
 }
