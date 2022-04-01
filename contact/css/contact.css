@@ -30,15 +30,13 @@ body{
     
 }
 
-input{
+form input{
     border: 1px solid #ccc;
     font-size: 1.375em;
     padding: 0.75em;
     width: 15em;
     background-color: var(--lbl);
-    
     border: 0px;
-
     border-radius: 20px;
 }
 
@@ -49,7 +47,7 @@ label, legend{
 
 }
 
-form{
+.form{
     margin: 2em ;
     
 }
